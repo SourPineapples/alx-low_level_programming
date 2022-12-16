@@ -2,14 +2,17 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * positive_or_negative -  debugging tests function that prints integere
- * @i: int in question
+ * positive_or_negative - debugging tests function that prints integer
+ * @i: int in use
  * Return: 0
  */
 
 void positive_or_negative(int i)
 {
 	int n;
+	int i;
+
+	i = 0;
 
 	srand(time(0));
 	n = i;
