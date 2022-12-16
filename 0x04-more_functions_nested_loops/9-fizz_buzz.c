@@ -15,7 +15,7 @@ void fizz_buzz(void)
 		else if (w % 3 == 0)
 			printf("Fizz ");
 		else if (w % 5 == 0)
-			printh("%d ", x);
+			printf("%d ", w);
 	}
 	printf('\n');
 }
