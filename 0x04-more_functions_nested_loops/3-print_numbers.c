@@ -2,7 +2,6 @@
 
 /**
  * print_numbers - function that prints the numbers, from 0 to 9
- * @a: int in question
  */
 void print_numbers(void)
 {
