@@ -2,10 +2,10 @@
 #include <string.h>
 /**
  * rot13 - function that encodes a string using rot13
- * @s: char in use
+ * @str: char in use
  * Return: string
  */
-char *rot13(char *s)
+char *rot13(char *str)
 {
 	int i1 = 0, i2;
 	char alphabet[52] = {'A', 'B', 'C', 'D', 'E', 'F',
