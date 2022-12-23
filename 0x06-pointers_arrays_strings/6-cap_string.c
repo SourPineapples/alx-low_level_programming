@@ -16,8 +16,8 @@ char *cap_string(char *v)
 		i = 0;
 		while (i < len)
 		{
-			if ((a == 0 || s[a - 1] == spc[i]) && (s[a] >= 97 && s[a] <= 122))
-				s[a] = s[a] - 32;
+			if ((a == 0 || v[a - 1] == spc[i]) && (v[a] >= 97 && v[a] <= 122))
+				v[a] = v[a] - 32;
 			i++;
 		}
 		a++;
