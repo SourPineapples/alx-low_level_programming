@@ -1,29 +1,36 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * fizz_buzz - designed to help filter out programming job candidates
+ * main - designed to help filter out programming job candidates
+ * Return: void
  */
-void fizz_buzz(void)
+int main(void)
 {
-	int w;
+	int i;
+	int w = 100;
 
-	for (w = 1; w < 100; w++)
+	i = 1;
+	while (i <= w)
 	{
-		if (w % 3 == 0 && w % 5 == 0)
+		if (i % 3 == 0 && i % 5 == 0)
 		{
-			printf("FizzBuzz" + ", ");
+			printf("FizzBuzz ");
 		}
-		else if (w % 3 == 0)
+		else if (i % 3 == 0)
 		{
-			printf("Fizz" + ", ");
+			printf("Fizz ");
 		}
-		else if (w % 5 == 0)
+		else if (i % 5 == 0)
 		{
-			printf("Buzz" + ", ");
+			if (i < w)
+				printf("Buzz ");
 		}
 		else
 		{
-			printf(w++ "\n");
+			printf("%i ", i);
 		}
+	i++;
 	}
+	printf("\n");
+	return (0);
 }
