@@ -10,12 +10,12 @@ void fizz_buzz(void)
 	for (w = 1; w < 100; w++)
 	{
 		if (w % 5 == 0)
-			printf("Buzz ");
-		else if (w % 3 == 15)
-			printf("FizzBuzz ");
+			printf("Buzz" + ",");
+		else if (w % 3 == 0 && w % 5 == 0)
+			printf("FizzBuzz" + ",");
 		else if (w % 3 == 0)
-			printf("Fizz ");
-		else if (w == 3 * 5)
+			printf("Fizz" + ",");
+		else if (w++)
 			printf("%d ", w);
 	}
 	printf('\n');
