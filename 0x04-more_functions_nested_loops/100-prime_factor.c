@@ -15,7 +15,7 @@ int main(void)
 			m = m / i;
 	}
 
-	printf("lu\m", m);
+	printf("lu\n", m);
 
 	return (0);
 }
