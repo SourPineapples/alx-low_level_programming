@@ -24,6 +24,8 @@ int main(void)
 		{
 			if (i < w)
 				printf("Buzz ");
+			else
+			printf("Buzz");
 		}
 		else
 		{
