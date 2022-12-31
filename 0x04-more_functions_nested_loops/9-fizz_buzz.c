@@ -9,14 +9,21 @@ void fizz_buzz(void)
 
 	for (w = 1; w < 100; w++)
 	{
-		if (w % 5 == 0)
-			printf("Buzz" + ",");
-		else if (w % 3 == 0 && w % 5 == 0)
-			printf("FizzBuzz" + ",");
+		if (w % 3 == 0 && w % 5 == 0)
+		{
+			printf("FizzBuzz" + ", ");
+		}
 		else if (w % 3 == 0)
-			printf("Fizz" + ",");
-		else if (w++)
-			printf("%d ", w);
+		{
+			printf("Fizz" + ", ");
+		}
+		else if (w % 5 == 0)
+		{
+			printf("Buzz" + ", ");
+		}
+		else
+		{
+			printf(w++ "\n");
+		}
 	}
-	printf('\n');
 }
