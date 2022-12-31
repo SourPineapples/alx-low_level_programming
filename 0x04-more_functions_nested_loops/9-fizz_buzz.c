@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 /**
  * fizz_buzz - designed to help filter out programming job candidates
