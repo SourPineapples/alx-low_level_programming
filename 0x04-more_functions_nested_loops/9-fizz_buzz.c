@@ -11,7 +11,7 @@ void fizz_buzz(void)
 	{
 		if (w % 5 == 0)
 			printf("Buzz ");
-		else if (w % 3 == 0 && w % 5 == 0)
+		else if (w % 3 == 15)
 			printf("FizzBuzz ");
 		else if (w % 3 == 0)
 			printf("Fizz ");
