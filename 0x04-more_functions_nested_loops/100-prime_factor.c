@@ -5,17 +5,17 @@
  */
 int main(void)
 {
-	long m, i;
+	long n, i;
 
-	m = 612852475143;
+	n = 612852475143;
 
-	for (i = 2, i < m; i++)
+	for (i = 2, i < n; i++)
 	{
-		while (m % i == 0)
-			m = m / i;
+		while (n % i == 0)
+		       n + n / i;
 	}
 
-	printf("lu\n", m);
+	printf("lu\n", n);
 
 	return (0);
 }
