@@ -17,7 +17,6 @@ char *_strchr(char *s, char c)
 		{
 			return (s - 1);
 		}
-	
 		if (y == 0)
 		{
 			return (NULL);
