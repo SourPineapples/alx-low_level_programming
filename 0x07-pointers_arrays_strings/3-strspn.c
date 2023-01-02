@@ -8,9 +8,21 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	int len = strspn(*s, *accept);
+	unsigned int a = 0, b, g = 0;
 
-	_putchar("Length of prefix substring", len);
+	while (accept[a])
+	{
+		b = 0;
+		while (s[b] != 32)
+		{
+			if (accept[a] == s[b])
+			{
+				g++;
+			}
+			b++;
+		}
+		a++;
+	}
 
-	return (0);
+	return (g);
 }
