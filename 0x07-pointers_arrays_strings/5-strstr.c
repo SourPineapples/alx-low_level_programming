@@ -2,7 +2,7 @@
 #include <string.h>
 
 /**
- * _strstr -locates a substring
+ * _strstr - locates a substring
  * @haystack: big string
  * @needle: substring
  * Return: beginning or NULL
