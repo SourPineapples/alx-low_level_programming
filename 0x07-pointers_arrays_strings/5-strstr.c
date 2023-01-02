@@ -1,11 +1,10 @@
-#include <string.h>
 #include "main.h"
 
 /**
  * _strstr -locates a substring
  * @haystack: big string
  * @needle: substring
- * Return: beginning of needle or NULL
+ * Return: beginning or NULL
  */
 char *_strstr(char *haystack, char *needle);
 {
