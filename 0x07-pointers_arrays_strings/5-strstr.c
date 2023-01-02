@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 
 /**
  * _strstr -locates a substring
@@ -15,9 +16,9 @@ char *_strstr(char *haystack, char *needle);
 		while (needle[z])
 		{
 			if (haystack[a + z] != needle[z])
-		{
-			break;
-		}
+			{
+				break;
+			}
 			z++;
 		}
 		if (needle[z] == '\0')
