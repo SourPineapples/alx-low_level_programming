@@ -18,14 +18,13 @@ char *_strstr(char *haystack, char *needle);
 		{
 			break;
 		}
-		z++;
-	}
-
-	if (needle[z] == '\0')
-	{
-		return (haystack + a);
-	}
-	a++;
+			z++;
+		}
+		if (needle[z] == '\0')
+		{
+			return (haystack + a);
+		}
+		a++;
 	}
 	return ('\0');
 }
