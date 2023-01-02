@@ -4,20 +4,20 @@
  * _strchr - locates a character in a string
  * @s: string of char
  * @c: char
- * Return: first character of c or NULL
+ * Return: a string or NULL
  */
 char *_strchr(char *s, char c)
 {
-	int y;
+	int a;
 
 	while (1)
 	{
-		y = *s++;
-		if (y == c)
+		a = *s++;
+		if (a == c)
 		{
 			return (s - 1);
 		}
-		if (y == 0)
+		if (a == 0)
 		{
 			return (NULL);
 		}
