@@ -18,7 +18,6 @@ int _strlen_recursion(char *s)
  * check_palindrome - checks for palindrome
  * @s: string
  * @len: length
- * @i: int
  * Return: 1 or 0
  */
 int check_palindrome(char *s, int len)
