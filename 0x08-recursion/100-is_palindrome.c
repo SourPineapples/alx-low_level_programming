@@ -19,7 +19,7 @@ int find_strlen(char *s)
  * @i: int
  * Return: 1 or 0
  */
-int check_palindrome(char *s, int len, int i)
+char check_palindrome(char *s, int len, int i)
 {
 	if (len > 0)
 	{
