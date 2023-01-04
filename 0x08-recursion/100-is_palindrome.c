@@ -1,15 +1,17 @@
 #include "main.h"
 
 /**
- * find_strlen - length of string
+ * _strlen_recursion - length of string
  * @s: string
  * Return: Length
  */
-int find_strlen(char *s)
+int _strlen_recursion(char *s)
 {
-	if (*s == '\0')
+	if (!*s)
+	{
 		return (0);
-	return (1 + find_strlen(s + 1));
+	}
+	return (1 + _strlen_recursion(++s));
 }
 
 /**
@@ -19,24 +21,17 @@ int find_strlen(char *s)
  * @i: int
  * Return: 1 or 0
  */
-char check_palindrome(char *s, int len, int i)
+int check_palindrome(char *s, int len, int i)
 {
-	if (len > 0)
+	if (len < 1)
 	{
-		if (s[i] == s[len])
-		{
-			return (check_palindrome(i + 1, len - 1, s));
-		}
-		else if (s[i] != s[len])
-		{
-			return (0);
-		}
-		else
-		{
-			return (1);
-		}
+		return (1);
 	}
-	return (1);
+	if (*s == *(s + len))
+	{
+	return (check_palindrome(s + 1, len - 2));
+	}
+	return (0);
 }
 
 
@@ -47,5 +42,7 @@ char check_palindrome(char *s, int len, int i)
  */
 int is_palindrome(char *s)
 {
-	return (check_palindrome(0, find_strlen(s) - 1, s));
+	int len = _strlen_recursions(s);
+
+	return (check_palindrome(s, len - 1));
 }
