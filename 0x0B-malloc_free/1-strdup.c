@@ -15,7 +15,7 @@ char *_strdup(char *str)
 		i++;
 	}
 
-	return (i);
+	return (str);
 }
 
 /**
@@ -45,7 +45,7 @@ char *_strcpy(char *dest, char *src)
  * Return: pointer
  */
 
-char *_strdup(chat *str)
+char *_strdup(char *str)
 {
 	char *dst;
 	unsigned int size;
