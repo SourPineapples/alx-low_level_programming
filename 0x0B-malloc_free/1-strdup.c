@@ -10,7 +10,7 @@ char *_strdup(char *str)
 	unsigned int i;
 
 	i = 0;
-	while (s[i] != '\0')
+	while (str[i] != '\0')
 	{
 		i++;
 	}
@@ -25,7 +25,7 @@ char *_strdup(char *str)
  * Return: dest
  */
 
-char *_strcpy(chat *dest, char *src)
+char *_strcpy(char *dest, char *src)
 {
 	int i = 0;
 
