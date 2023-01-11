@@ -1,21 +1,21 @@
 #include "main.h"
 
 /**
- * _strdup - returns a pointer to a newly allocated space in memory
- * @str: string
- * Return: NULL or new string
+ * _strlen - returns a pointer to a newly allocated space in memory
+ * @s: string
+ * Return: NULL or 1 g
  */
-char *_strdup(char *str)
+int _strlen(char *s)
 {
 	unsigned int i;
 
 	i = 0;
-	while (str[i] != '\0')
+	while (s[i] != '\0')
 	{
 		i++;
 	}
 
-	return (str);
+	return (i);
 }
 
 /**
@@ -56,7 +56,7 @@ char *_strdup(char *str)
 	}
 
 	size = _strlen(str) + 1;
-	dst = (char *) malloc(size *sizeof(char));
+	dst = (char *) malloc(size * sizeof(char));
 
 	if (dst == 0)
 	{
